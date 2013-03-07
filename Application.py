@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
 #########################################################################
-# Author	 : Austin Dubina											#
-# Date 		 : 3/6/2013													#
+# Author	 : Austin Dubina					#
+# Date 		 : 3/6/2013						#
 # Description: Small python script that querys PuppetLabs Inc. server	#
-# and returns the value of X-Answer header.			  					#
-# Reference  : http://docs.python.org/2/library/httplib.html			#
+# and returns the value of X-Answer header.			  	#
+# Reference  : http://docs.python.org/2/library/httplib.html		#
 #########################################################################
 
 import sys
