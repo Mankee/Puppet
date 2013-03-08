@@ -9,15 +9,8 @@
 #########################################################################
 
 import sys
-import os
 import httplib
 import urllib
-import socket
-
-#Try static lib first
-mydir = os.path.dirname(os.path.abspath(__file__))
-libdir = os.path.abspath(os.path.join(mydir, "..", "python", ".libs"))
-sys.path.insert(0, libdir)
 
 class Main():
 	def __init__(self):
@@ -44,6 +37,7 @@ class Main():
 		print "X-ANSWER VALUE:", self.response.getheader('X-Answer')
 		print "LAST MODIFIED:", self.response.getheader('Last-modified')
 		print "RESPONSE:", self.response.read()
+		print self.response.getheaders()
 
 	#Clean-up
 	def closeConnection(self):
