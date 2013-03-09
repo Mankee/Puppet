@@ -37,7 +37,6 @@ class Main():
 		print "X-ANSWER VALUE:", self.response.getheader('X-Answer')
 		print "LAST MODIFIED:", self.response.getheader('Last-modified')
 		print "RESPONSE:", self.response.read()
-		print self.response.getheaders()
 
 	#Clean-up
 	def closeConnection(self):
